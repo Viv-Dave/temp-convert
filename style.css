@@ -1,0 +1,112 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-div {
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#temperature {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #0288d1;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #0288d1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #0288d1;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0277bd;
+}
+
+button:focus {
+  outline: none;
+  background-color: #01579b;
+}
+
+.output {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #0288d1;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+#From,
+#To {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.from p,
+.to p {
+  font-size: 1rem;
+  color: #0288d1;
+  font-weight: bold;
+}
+.output::first-letter {
+  text-transform: capitalize;
+}
+::placeholder {
+  color: #0288d1;
+  opacity: 0.7;
+}
